@@ -1,0 +1,27 @@
+import random
+
+while(True):
+    ch=["ROCK","PAPER","SCISSOR"]
+    user_ch=input("ENTER YOUR CHOICE:")
+    comp_ch=random.choice(ch)
+    
+    print("MY CHOICE:",user_ch)
+    print("COMPUTER CHOICE:",comp_ch)
+    
+    if(user_ch==comp_ch):
+        print("DRAW")
+    elif(user_ch=="ROCK" and comp_ch=="SCISSOR"):
+        print("USER WINS")
+    elif(user_ch=="ROCK" and comp_ch=="PAPER"):
+        print("COMPUTER WINS")
+    elif(user_ch=="SCISSOR" and comp_ch=="PAPER"):
+        print("USER WINS")
+    elif(user_ch=="SCISSOR" and comp_ch=="ROCK"):
+        print("COMPUTER WINS")   
+    elif(user_ch=="PAPER" and comp_ch=="SCISSOR"):
+        print("COMPUTER WINS")
+    elif(user_ch=="PAPER" and comp_ch=="ROCK"):
+        print("USER WINS")
+    ch1=input("DO U WANT TO PLAY AGAIN ? (y/n):")
+    if(ch1=="n"):
+        break
