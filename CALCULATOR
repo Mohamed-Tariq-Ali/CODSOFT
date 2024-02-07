@@ -1,0 +1,21 @@
+print(">>>>CACULATOR<<<<")
+def calc():
+    while(True):
+        a=int(input("ENTER THE FIRST VALUE:"))
+        b=int(input("ENTER THE SECOND VALUE:"))
+        op=input("ENTER THE OPERATORS:")
+        if(op=="+"):
+            print(a+b)
+        elif(op=="-"):
+            print(a-b)
+        elif(op=="*"):
+            print(a*b)
+        elif(op=="/"):
+            print(a/b)
+        else:
+            print("INVALID OPERATOR")
+        ch=input("DO YOU WANT TO TRY AGAIN ?(Y/N):")
+        if(ch=="N"):
+                break
+calc()
+    
